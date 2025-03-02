@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/welcome.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="assets/images/logo.png"
+        alt="Expense Tracker Logo"
+      />
+      <h2>Expense Tracker</h2>
+      <a class="link" href="#">Contact Us</a>
+    </header>
+    <div class="main-container">
+      <main>
+        <div class="header">
+          <h2 id="txt"></h2>
+        </div>
+        <aside>
+          <p>Do you want to logout?</p>
+          <button id="logout">Logout</button>
+        </aside>
+      </main>
+
+      <div class="main-content">
+        <div class="item-1">
+          <input
+            type="text"
+            id="expenseNo"
+            placeholder="Please enter your expense"
+          />
+          <img
+            src="assets/images/cross.png"
+            alt="Plus Button"
+            id="confirmBtn"
+          />
+          <div class="error"></div>
+          <div class="expenseContainer"></div>
+        </div>
+        <div class="item-2">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img
+        class="logo"
+        src="assets/images/logo.png"
+        alt="Expense Tracker Logo"
+      />
+      <h2>Developed And Maintained By Aryan Dev</h2>
+    </footer>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/welcome.js"></script>
+  </body>
+</html>
